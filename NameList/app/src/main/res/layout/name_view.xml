@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:padding="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/name"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:text="David Fisher"
-        />
+        android:padding="8dp">
 
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/name"
-        android:text="I'm 30 years old."
-        />
-</RelativeLayout>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="David Fisher"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:text="I'm 30 years old."
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
